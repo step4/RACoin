@@ -11,7 +11,7 @@ What is Racoin?
 Racoin is a version of Bitcoin using scrypt as a proof-of-work algorithm.
  - 5 minute block targets
  - subsidy halves 210000 blocks(~1 year)
- - 525600 total coins
+ - 42000000 total coins
 
 The rest is the same as Bitcoin.
  - 50 coins per block
