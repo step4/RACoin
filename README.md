@@ -36,6 +36,7 @@ Linux - Ubuntu 16.04:
     sudo apt-get install libssl-dev -y
     sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
     sudo apt-get install libminiupnpc-dev -y
+    sudo apt-get install qt5-default
 ```
 2. Create 'racoin.conf' in "~/.racoin" and paste:
 ```
