@@ -1,5 +1,5 @@
 ---
-name: "racoin"
+name: "RACoin"
 suites:
 - "lucid"
 architectures:
@@ -21,7 +21,7 @@ packages:
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
 - "url": "https://github.com/step4/RACoin.git"
-  "dir": "racoin"
+  "dir": "RACoin"
 files:
 - "miniupnpc-1.9.20140401.tar.gz"
 - "qrencode-3.4.3.tar.bz2"
@@ -44,7 +44,7 @@ script: |
   make $MAKEOPTS install
   cd ..
   #
-  cd racoin
+  cd RACoin
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
   cp $OUTDIR/src/doc/README.md $OUTDIR
