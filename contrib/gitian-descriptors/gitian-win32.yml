@@ -13,7 +13,7 @@ packages:
 - "faketime"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/racoin-project/racoin.git"
+- "url": "https://github.com/step4/RACoin.git"
   "dir": "racoin"
 files:
 - "qt-win32-4.8.5-gitian-r8.zip"
