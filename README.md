@@ -4,7 +4,8 @@ Racoin integration/staging tree
 http://www.racoin.org
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Racoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2017 Christian Rausch, Moritz Schneider, HS Koblenz
 
 What is Racoin?
 ----------------
