@@ -29,26 +29,41 @@ How to:
 -------
 Linux - Ubuntu 16.04:
 1. Install dependencies:
+```
     sudo add-apt-repository ppa:bitcoin/bitcoin -y
     sudo apt-get update -y
     sudo apt-get install libboost-all-dev -y
     sudo apt-get install libssl-dev -y
     sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
     sudo apt-get install libminiupnpc-dev -y
-2. Start Racoin Daemon with ./racoind
+```
+
+2. Start Racoin Daemon with 
+```
+./racoind
+```
 
 
 MacOS:
-1. brew install berkeley-db@4 openssl boost@1.57 qt5
-2. Create 'racoin.conf' in /Users/chris/Library/Application Support/RACoin and paste:
+1. Install dependencies:
+```
+brew install berkeley-db@4 openssl boost@1.57 qt5
+```
+2. Create 'racoin.conf' in "/Users/chris/Library/Application Support/RACoin" and paste:
+```
+
     addnode=step4.de
     rpcuser=theUsernameOfYourChoice
     rpcpassword=thePasswordOfYourChoice
+```
+
 3. Start RACoin-Qt.app
 
 Windows:
-1. Create 'racoin.conf' in C:Users\youruser\AppData\Roaming\Racoin and paste:
+1. Create 'racoin.conf' in "C:Users\youruser\AppData\Roaming\Racoin" and paste:
+```
     addnode=step4.de
     rpcuser=theUsernameOfYourChoice
     rpcpassword=thePasswordOfYourChoice
+```
 2. Start racoin-qt.exe
