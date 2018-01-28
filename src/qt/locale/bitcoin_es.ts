@@ -2245,8 +2245,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 9333 o testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 8393 or testnet: 18393)</source>
+        <translation>Escuchar conexiones en &lt;puerto&gt; (predeterminado: 8393 o testnet: 18393)</translation>
     </message>
     <message>
         <location line="+5"/>

@@ -2236,8 +2236,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Kuula ühendusi pordil &lt;port&gt; (vaikeväärtus: 9333 või testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 8393 or testnet: 18393)</source>
+        <translation>Kuula ühendusi pordil &lt;port&gt; (vaikeväärtus: 8393 või testnet: 18393)</translation>
     </message>
     <message>
         <location line="+5"/>
