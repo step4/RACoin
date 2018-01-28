@@ -1,25 +1,22 @@
-Racoin integration/staging tree
+Racoin 
 ================================
 
-http://www.racoin.org
-
-Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Racoin Developers
+- Copyright (c) 2009-2014 Bitcoin Developers
+- Copyright (c) 2011-2014 Litecoin Developers
+- Copyright (c) 2017 Christian Rausch, Moritz Schneider, HS Koblenz
 
 What is Racoin?
 ----------------
 
-Racoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+Racoin is a version of Bitcoin using scrypt as a proof-of-work algorithm.
+ - 5 minute block targets
+ - subsidy halves 210000 blocks(~1 year)
+ - 525600 total coins
 
 The rest is the same as Bitcoin.
  - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - 288 blocks to retarget difficulty
 
-For more information, as well as an immediately useable, binary version of
-the Racoin client sofware, see http://www.racoin.org.
 
 License
 -------
@@ -27,47 +24,31 @@ License
 Racoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
-Development process
--------------------
 
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
-
-If it is a simple/trivial/non-controversial change, then one of the Racoin
-development team members simply pulls it.
-
-If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion with the devs and community.
-
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see `doc/coding.txt`) or are
-controversial.
-
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/racoin-project/racoin/tags) are created
-regularly to indicate new official, stable release versions of Racoin.
-
-Testing
+How to:
 -------
+Linux - Ubuntu 16.04:
+1. Install dependencies:
+    sudo add-apt-repository ppa:bitcoin/bitcoin -y
+    sudo apt-get update -y
+    sudo apt-get install libboost-all-dev -y
+    sudo apt-get install libssl-dev -y
+    sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+    sudo apt-get install libminiupnpc-dev -y
+2. Start Racoin Daemon with ./racoind
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test. Please be patient and help out, and
-remember this is a security-critical project where any mistake might cost people
-lots of money.
 
-### Automated Testing
+MacOS:
+1. brew install berkeley-db@4 openssl boost@1.57 qt5
+2. Create 'racoin.conf' in /Users/chris/Library/Application Support/RACoin and paste:
+    addnode=step4.de
+    rpcuser=theUsernameOfYourChoice
+    rpcpassword=thePasswordOfYourChoice
+3. Start RACoin-Qt.app
 
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code.
-
-Unit tests for the core code are in `src/test/`. To compile and run them:
-
-    cd src; make -f makefile.unix test
-
-Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
-
-    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
-    make -f Makefile.test
-    ./racoin-qt_test
-
+Windows:
+1. Create 'racoin.conf' in C:Users\youruser\AppData\Roaming\Racoin and paste:
+    addnode=step4.de
+    rpcuser=theUsernameOfYourChoice
+    rpcpassword=thePasswordOfYourChoice
+2. Start racoin-qt.exe
