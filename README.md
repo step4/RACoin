@@ -37,11 +37,13 @@ Linux - Ubuntu 16.04:
     sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
     sudo apt-get install libminiupnpc-dev -y
 ```
-
-2. Start Racoin Daemon with 
+2. Create 'racoin.conf' in "~/.racoin" and paste:
 ```
-./racoind
+    addnode=step4.de
+    rpcuser=theUsernameOfYourChoice
+    rpcpassword=thePasswordOfYourChoice
 ```
+3. Start racoin-qt
 
 
 MacOS:
@@ -51,12 +53,10 @@ brew install berkeley-db@4 openssl boost@1.57 qt5
 ```
 2. Create 'racoin.conf' in "/Users/chris/Library/Application Support/RACoin" and paste:
 ```
-
     addnode=step4.de
     rpcuser=theUsernameOfYourChoice
     rpcpassword=thePasswordOfYourChoice
 ```
-
 3. Start RACoin-Qt.app
 
 Windows:
