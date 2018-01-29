@@ -62,7 +62,7 @@ brew install berkeley-db@4 openssl boost@1.57 qt5
 3. Start RACoin-Qt.app
 
 Windows:
-1. Create 'racoin.conf' in "C:Users\youruser\AppData\Roaming\Racoin" and paste:
+1. Create 'racoin.conf' in "C:\Users\youruser\AppData\Roaming\Racoin" and paste:
 ```
     addnode=step4.de
     rpcuser=theUsernameOfYourChoice
